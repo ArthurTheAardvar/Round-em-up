@@ -6,8 +6,32 @@ for _ in range(n_cases):
     line = sys.stdin.readline().rstrip()
     line = line.split(" ")
 
-    if int(line[0]) % 2 == 0 or int(line[1]) % 2 == 0 or int(line[2]) % 2 == 0:
-        print(int(line[0]) + 1, int(line[1]) +1, int(line[2]) +1)
+    a = int(line[0])
+    b = int(line[1])
+    c = int(line[2])
 
-    else:
-        print(int(line[0]) + 2, int(line[1]) + 2, int(line[2]) + 2)
+    if a % 2 == 0:
+        a = a + 1
+    
+    elif b % 2 == 0:
+        b = b + 1
+
+    elif c % 2 == 0:
+        c = c + 1
+    
+    print(a, b, c)
+
+    
+
+    
+    if a % 2 != 0:
+
+        a = a + 2
+
+    elif b % 2 != 0:
+        b= b + 2
+
+    elif c % 2 != 0:
+        c = c + 2
+
+    print(a, b, c)
